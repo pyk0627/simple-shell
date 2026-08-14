@@ -1,17 +1,17 @@
 void lsh_loop(void)
 {
-	char *line;
-	char **args;
-	int status;
+	char *line;//用来存储当前读取的这一行
+	char **args;//存储把行分解后的结果
+	int status;//当前的状态
 
 	do
 	{
-		printf("> ");
-		line = lsh_read();
-		args = lsh_split_line(line);
-		status = lsh_execute(args);
+		printf("> ");//打印一个标识符
+		line = lsh_read();//调用读取行的函数，并保存结果
+		args = lsh_split_line(line);//调用分解行的函数，并保存结果
+		status = lsh_execute(args);//对分解后的结果执行
 
-		free(line);
+		free(line);//
 		free(args);
-	}while(status);
+	}while(status);//状态正常时，持续运行
 }
