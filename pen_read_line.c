@@ -10,7 +10,7 @@ char *pen_read_line(void)//返回一个字符串
 
 	if(!buffer)
 	{
-		fprintf(stderr,"lsh:allocation error\n");
+		fprintf(stderr,"pen:allocation error\n");
 		exit(EXIT_FAILURE);
 	}
 
