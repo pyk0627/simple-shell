@@ -1,3 +1,5 @@
+//lsh_launch.c
+#include "lsh.h"
 int lsh_launch(char **args)
 {
 	pid_t pid,wpid;//process id type

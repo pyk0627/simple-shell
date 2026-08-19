@@ -1,3 +1,5 @@
+//lsh_read_line.c
+#include "lsh.h"
 #define LSH_RL_BUFSIZE 1024//每次读取行的缓冲区大小
 char *lsh_read_line(void)//返回一个字符串
 {

@@ -1,3 +1,5 @@
+//main.c
+#include "lsh.h"
 int main(int argc,char **argv)
 {
 	//Load config file, if any.
