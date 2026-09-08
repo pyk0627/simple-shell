@@ -1,5 +1,5 @@
 # simple-shell
-
+## 在linux环境下编译运行
 ```c
 /*
  * 	main()
